@@ -3,9 +3,9 @@
 #!homepage=https://github.com/akudamatata/iOS-Location-Spoofer-Web
 #!author=akudamatata
 
-# 当前 latitude/longitude 仍是上游示例（天安门附近）。导入小火箭前改成你要固定的点。
+# 6708 Pacific Blvd, Huntington Park, CA 90255
 [Script]
-iOS Location Spoofer = type=http-response,pattern=^https?:\/\/(?:gs-loc(?:-cn)?\.apple\.com|gsp-ssl\.ls\.apple\.com|bluedot\.is\.autonavi\.com(?:\.gds\.alibabadns\.com)?)\/clls\/wloc(?:\?.*)?$,requires-body=1,binary-body-mode=1,max-size=0,timeout=30,script-path=https://cdn.jsdelivr.net/gh/Pupa2000/iOS-Location-Spoofer-Web@main/public/location-spoofer.js,argument=mode=response&latitude=39.90872&longitude=116.39748&horizontalAccuracy=39&verticalAccuracy=1000&altitude=44&debug=false
+iOS Location Spoofer = type=http-response,pattern=^https?:\/\/(?:gs-loc(?:-cn)?\.apple\.com|gsp-ssl\.ls\.apple\.com|bluedot\.is\.autonavi\.com(?:\.gds\.alibabadns\.com)?)\/clls\/wloc(?:\?.*)?$,requires-body=1,binary-body-mode=1,max-size=0,timeout=30,script-path=https://cdn.jsdelivr.net/gh/Pupa2000/iOS-Location-Spoofer-Web@main/public/location-spoofer.js,argument=mode=response&latitude=33.9783852&longitude=-118.2250768&horizontalAccuracy=39&verticalAccuracy=1000&altitude=53&debug=false
 
 [MITM]
 hostname = %APPEND% gs-loc.apple.com, gs-loc-cn.apple.com, gsp-ssl.ls.apple.com, bluedot.is.autonavi.com, bluedot.is.autonavi.com.gds.alibabadns.com
